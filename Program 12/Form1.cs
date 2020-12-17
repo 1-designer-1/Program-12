@@ -52,5 +52,48 @@ namespace Program_12
                 statusTask.Text = "Номер задачи - " + 2;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e) // событие рассчета периметра и площади прямоугольника 
+        {
+            int x1, y1, x2, y2, a, b;
+            int per, s;
+            bool k, l, m, n;
+            k = int.TryParse(textBox1.Text, out x1);
+            l = int.TryParse(textBox2.Text, out y1);
+            m = int.TryParse(textBox3.Text, out x2);
+            n = int.TryParse(textBox4.Text, out y2);
+            if (k == true && l == true && m == true && n == true)
+            {
+                a = Math.Abs(x2 - x1);
+                b = Math.Abs(y2 - y1);
+                per = (a + b) * 2;
+                s = a * b;
+                textBox8.Text = Convert.ToString(s);
+                textBox7.Text = Convert.ToString(per);
+            }
+            else MessageBox.Show("Введите правильное значение");
+        }
+
+        private void button2_Click(object sender, EventArgs e)// событие рассчета количества полных килобайтов
+        {
+            int b, kb;
+            bool a = int.TryParse(textBox5.Text, out b);
+            if (a == true)
+            {
+                kb = b / 1024;
+                textBox6.Text = kb.ToString();
+            }
+            else MessageBox.Show("Введите правельное значения");
+        }
+
+        private void очиститьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            button1.Focus();
+
+        }
     }
 }

@@ -53,7 +53,7 @@ namespace Program_12
             }
         }
 
-        private void button1_Click(object sender, EventArgs e) // событие рассчета периметра и площади прямоугольника 
+        private void button1_Click(object sender, EventArgs e) // событие 1 рассчет периметра и площади прямоугольника 
         {
             int x1, y1, x2, y2, a, b;
             int per, s;
@@ -74,7 +74,7 @@ namespace Program_12
             else MessageBox.Show("Введите правильное значение");
         }
 
-        private void button2_Click(object sender, EventArgs e)// событие рассчета количества полных килобайтов
+        private void button2_Click(object sender, EventArgs e)// событие 2 рассчет количества полных килобайтов
         {
             int b, kb;
             bool a = int.TryParse(textBox5.Text, out b);
@@ -86,14 +86,20 @@ namespace Program_12
             else MessageBox.Show("Введите правельное значения");
         }
 
-        private void очиститьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void очиститьToolStripMenuItem_Click(object sender, EventArgs e) // удаление для событие 1
         {
             textBox1.Clear();
             textBox2.Clear(); 
             textBox3.Clear();
             textBox4.Clear();
-            button1.Focus();
+            textBox1.Focus();
 
+        }
+
+        private void очиститьToolStripMenuItem1_Click(object sender, EventArgs e)// удаление для событие 2
+        {
+            textBox5.Clear();
+            textBox5.Focus();
         }
     }
 }

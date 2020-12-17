@@ -423,6 +423,7 @@ namespace Program_12
             this.очиститьToolStripMenuItem1.Name = "очиститьToolStripMenuItem1";
             this.очиститьToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.очиститьToolStripMenuItem1.Text = "Очистить";
+            this.очиститьToolStripMenuItem1.Click += new System.EventHandler(this.очиститьToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 

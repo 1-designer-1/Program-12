@@ -89,7 +89,7 @@ namespace Program_12
         private void очиститьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
-            textBox2.Clear();
+            textBox2.Clear(); 
             textBox3.Clear();
             textBox4.Clear();
             button1.Focus();

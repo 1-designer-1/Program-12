@@ -39,7 +39,6 @@ namespace Program_12
 
         }
 
-
         private void numderTask(object sender, EventArgs e)//событие изменения номера задачи при переключении вкладок
         {
 
@@ -92,6 +91,8 @@ namespace Program_12
             textBox2.Clear(); 
             textBox3.Clear();
             textBox4.Clear();
+            textBox7.Clear();
+            textBox8.Clear();
             textBox1.Focus();
 
         }
@@ -99,6 +100,7 @@ namespace Program_12
         private void очиститьToolStripMenuItem1_Click(object sender, EventArgs e)// удаление значений для событие 2
         {
             textBox5.Clear();
+            textBox6.Clear();
             textBox5.Focus();
         }
 
@@ -147,6 +149,11 @@ namespace Program_12
                 textBox6.Text = kb.ToString();
             }
             else MessageBox.Show("Введите правельное значения");
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e) // Закрытие формы
+        {
+            this.Close();
         }
     }
 }

@@ -15,6 +15,12 @@ namespace Program_12
         public Form1()
         {
             InitializeComponent();
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.SetToolTip(this.textBox1, "x1"); // Подсказки 
+            toolTip1.SetToolTip(this.textBox2, "y1");
+            toolTip1.SetToolTip(this.textBox3, "x2");
+            toolTip1.SetToolTip(this.textBox4, "y2");
+            toolTip1.SetToolTip(this.textBox5, "1 килобайт = 1024 байта");
         }
 
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)

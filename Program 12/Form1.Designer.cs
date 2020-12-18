@@ -104,6 +104,7 @@ namespace Program_12
             this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.ShowItemToolTips = true;
             this.menuStrip1.Size = new System.Drawing.Size(498, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
@@ -120,8 +121,10 @@ namespace Program_12
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
-            this.файлToolStripMenuItem.Tag = "ДА";
+            this.файлToolStripMenuItem.Tag = "";
             this.файлToolStripMenuItem.Text = "Файл";
+            this.файлToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.файлToolStripMenuItem.ToolTipText = "Вся кое";
             // 
             // ответToolStripMenuItem
             // 
@@ -175,6 +178,7 @@ namespace Program_12
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
             this.справкаToolStripMenuItem.Text = "Справка";
+            this.справкаToolStripMenuItem.ToolTipText = "))))";
             // 
             // оПрограммеToolStripMenuItem
             // 

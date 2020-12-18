@@ -21,6 +21,8 @@ namespace Program_12
             toolTip1.SetToolTip(this.textBox3, "x2");
             toolTip1.SetToolTip(this.textBox4, "y2");
             toolTip1.SetToolTip(this.textBox5, "1 килобайт = 1024 байта");
+
+
         }
 
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)

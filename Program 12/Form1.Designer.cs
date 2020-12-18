@@ -32,6 +32,13 @@ namespace Program_12
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ответToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.очиститьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.расчетToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.очиститьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -42,6 +49,7 @@ namespace Program_12
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -55,21 +63,21 @@ namespace Program_12
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ответToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.очиститьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.расчетToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.очиститьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.заполнитьСлучайнымиЧисламиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.получитьРезультатToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ввод1024ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.значениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -80,6 +88,10 @@ namespace Program_12
             this.tabPage2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
+            this.contextMenuStrip3.SuspendLayout();
+            this.contextMenuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -108,12 +120,56 @@ namespace Program_12
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
+            // ответToolStripMenuItem
+            // 
+            this.ответToolStripMenuItem.Name = "ответToolStripMenuItem";
+            this.ответToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.ответToolStripMenuItem.Text = "Ответ";
+            this.ответToolStripMenuItem.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // очиститьToolStripMenuItem
+            // 
+            this.очиститьToolStripMenuItem.Name = "очиститьToolStripMenuItem";
+            this.очиститьToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.очиститьToolStripMenuItem.Text = "Очистить";
+            this.очиститьToolStripMenuItem.Click += new System.EventHandler(this.очиститьToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(153, 6);
+            // 
+            // расчетToolStripMenuItem
+            // 
+            this.расчетToolStripMenuItem.Name = "расчетToolStripMenuItem";
+            this.расчетToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.расчетToolStripMenuItem.Text = "Расчет";
+            this.расчетToolStripMenuItem.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // очиститьToolStripMenuItem1
+            // 
+            this.очиститьToolStripMenuItem1.Name = "очиститьToolStripMenuItem1";
+            this.очиститьToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
+            this.очиститьToolStripMenuItem1.Text = "Очистить";
+            this.очиститьToolStripMenuItem1.Click += new System.EventHandler(this.очиститьToolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(153, 6);
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.выходToolStripMenuItem.Text = "Выход";
+            // 
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.оПрограммеToolStripMenuItem});
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.справкаToolStripMenuItem.Text = "Справка";
             // 
             // оПрограммеToolStripMenuItem
@@ -187,6 +243,7 @@ namespace Program_12
             // 
             // groupBox2
             // 
+            this.groupBox2.ContextMenuStrip = this.contextMenuStrip2;
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.textBox8);
@@ -198,6 +255,16 @@ namespace Program_12
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Результат";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(317, 57);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Ответ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -235,6 +302,7 @@ namespace Program_12
             // 
             // groupBox1
             // 
+            this.groupBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBox4);
@@ -308,6 +376,7 @@ namespace Program_12
             // 
             // groupBox4
             // 
+            this.groupBox4.ContextMenuStrip = this.contextMenuStrip4;
             this.groupBox4.Controls.Add(this.textBox6);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.button2);
@@ -318,49 +387,15 @@ namespace Program_12
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Результат";
             // 
-            // groupBox3
+            // label2
             // 
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Location = new System.Drawing.Point(3, 6);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(478, 100);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Исходные данные";
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.UpdateTime);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(317, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Ответ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(16, 58);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(199, 22);
-            this.textBox5.TabIndex = 1;
-            this.textBox5.UseWaitCursor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Размер файла в байтах";
-            this.label1.UseWaitCursor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Размер в килобайтах";
+            this.label2.UseWaitCursor = true;
             // 
             // button2
             // 
@@ -373,68 +408,108 @@ namespace Program_12
             this.button2.UseWaitCursor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.ContextMenuStrip = this.contextMenuStrip3;
+            this.groupBox3.Controls.Add(this.textBox5);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Location = new System.Drawing.Point(3, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(478, 100);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Исходные данные";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.label1.Location = new System.Drawing.Point(13, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Размер файла в байтах";
+            this.label1.UseWaitCursor = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.UpdateTime);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.заполнитьСлучайнымиЧисламиToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(308, 28);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.получитьРезультатToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip1";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(216, 28);
+            // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ввод1024ToolStripMenuItem});
+            this.contextMenuStrip3.Name = "contextMenuStrip1";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(149, 28);
+            // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.значениеToolStripMenuItem});
+            this.contextMenuStrip4.Name = "contextMenuStrip1";
+            this.contextMenuStrip4.Size = new System.Drawing.Size(150, 28);
+            // 
+            // заполнитьСлучайнымиЧисламиToolStripMenuItem
+            // 
+            this.заполнитьСлучайнымиЧисламиToolStripMenuItem.Name = "заполнитьСлучайнымиЧисламиToolStripMenuItem";
+            this.заполнитьСлучайнымиЧисламиToolStripMenuItem.Size = new System.Drawing.Size(307, 24);
+            this.заполнитьСлучайнымиЧисламиToolStripMenuItem.Text = "Заполнить случайными числами";
+            this.заполнитьСлучайнымиЧисламиToolStripMenuItem.Click += new System.EventHandler(this.заполнитьСлучайнымиЧисламиToolStripMenuItem_Click);
+            // 
+            // получитьРезультатToolStripMenuItem
+            // 
+            this.получитьРезультатToolStripMenuItem.Name = "получитьРезультатToolStripMenuItem";
+            this.получитьРезультатToolStripMenuItem.Size = new System.Drawing.Size(215, 24);
+            this.получитьРезультатToolStripMenuItem.Text = "Получить результат";
+            this.получитьРезультатToolStripMenuItem.Click += new System.EventHandler(this.получитьРезультатToolStripMenuItem_Click);
+            // 
+            // ввод1024ToolStripMenuItem
+            // 
+            this.ввод1024ToolStripMenuItem.Name = "ввод1024ToolStripMenuItem";
+            this.ввод1024ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.ввод1024ToolStripMenuItem.Text = "Ввод 1024";
+            this.ввод1024ToolStripMenuItem.Click += new System.EventHandler(this.ввод1024ToolStripMenuItem_Click);
+            // 
+            // значениеToolStripMenuItem
+            // 
+            this.значениеToolStripMenuItem.Name = "значениеToolStripMenuItem";
+            this.значениеToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.значениеToolStripMenuItem.Text = "Значение ";
+            this.значениеToolStripMenuItem.Click += new System.EventHandler(this.значениеToolStripMenuItem_Click);
+            // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(11, 46);
+            this.textBox6.Location = new System.Drawing.Point(9, 44);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(199, 22);
-            this.textBox6.TabIndex = 99;
-            this.textBox6.UseWaitCursor = true;
+            this.textBox6.TabIndex = 6;
             // 
-            // label2
+            // textBox5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Размер в килобайтах";
-            this.label2.UseWaitCursor = true;
-            // 
-            // ответToolStripMenuItem
-            // 
-            this.ответToolStripMenuItem.Name = "ответToolStripMenuItem";
-            this.ответToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.ответToolStripMenuItem.Text = "Ответ";
-            this.ответToolStripMenuItem.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // очиститьToolStripMenuItem
-            // 
-            this.очиститьToolStripMenuItem.Name = "очиститьToolStripMenuItem";
-            this.очиститьToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.очиститьToolStripMenuItem.Text = "Очистить";
-            this.очиститьToolStripMenuItem.Click += new System.EventHandler(this.очиститьToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
-            // 
-            // расчетToolStripMenuItem
-            // 
-            this.расчетToolStripMenuItem.Name = "расчетToolStripMenuItem";
-            this.расчетToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.расчетToolStripMenuItem.Text = "Расчет";
-            this.расчетToolStripMenuItem.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // очиститьToolStripMenuItem1
-            // 
-            this.очиститьToolStripMenuItem1.Name = "очиститьToolStripMenuItem1";
-            this.очиститьToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.очиститьToolStripMenuItem1.Text = "Очистить";
-            this.очиститьToolStripMenuItem1.Click += new System.EventHandler(this.очиститьToolStripMenuItem1_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(221, 6);
-            // 
-            // выходToolStripMenuItem
-            // 
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.выходToolStripMenuItem.Text = "Выход";
+            this.textBox5.Location = new System.Drawing.Point(16, 58);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(199, 22);
+            this.textBox5.TabIndex = 5;
             // 
             // Form1
             // 
@@ -465,6 +540,10 @@ namespace Program_12
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
+            this.contextMenuStrip3.ResumeLayout(false);
+            this.contextMenuStrip4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,10 +579,8 @@ namespace Program_12
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripStatusLabel statusTask;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem ответToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem очиститьToolStripMenuItem;
@@ -512,6 +589,16 @@ namespace Program_12
         private System.Windows.Forms.ToolStripMenuItem очиститьToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem заполнитьСлучайнымиЧисламиToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem получитьРезультатToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip4;
+        private System.Windows.Forms.ToolStripMenuItem значениеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ввод1024ToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }
 
